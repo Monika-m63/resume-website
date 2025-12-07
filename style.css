@@ -1,56 +1,114 @@
 * {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #f4f4f4;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  min-height: 100vh;
 }
 
+/* Header */
 header {
-  background-color: #333;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
   color: white;
-  padding: 15px;
+  padding: 25px 10px;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
   color: white;
-  margin: 10px;
   text-decoration: none;
-  font-weight: bold;
+  margin: 0 12px;
+  font-size: 16px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
-.container {
+nav a:hover {
   background: white;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
+  color: #2c3e50;
 }
 
+/* Content Card */
+.container {
+  max-width: 900px;
+  margin: 30px auto 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-left: 6px solid #4ca1af;
+  padding-left: 10px;
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 12px 30px;
+  font-size: 15px;
+  background: linear-gradient(to right, #4ca1af, #2c3e50);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 15px;
 }
 
-table, th, td {
-  border: 1px solid #333;
-  padding: 10px;
+table th {
+  background: #4ca1af;
+  color: white;
+  padding: 12px;
 }
 
+table td {
+  padding: 12px;
+  background: #f9f9f9;
+}
+
+table tr:nth-child(even) td {
+  background: #eef7f9;
+}
+
+/* Footer */
 footer {
-  background: #333;
+  background: #2c3e50;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-button {
-  padding: 10px 20px;
-  margin-top: 10px;
+  font-size: 14px;
 }
